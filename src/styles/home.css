@@ -1,0 +1,111 @@
+#maindiv{
+    display: flex;
+}
+.movies{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    /* width: 20%; */
+}
+.posters{
+    margin: auto;
+    display: block;
+    width: 20vw;
+}
+.container{
+    width: 80vw;
+    /* border: 2px solid red; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid #ccc; */
+    width: 20vw;
+}
+.lists p{
+    font-size: 2vw;
+
+}
+.lists p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 20vw;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* margin: 10px; */
+}
+#select{
+    margin: auto;
+    display: block;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    font-size: large;
+
+}
+.wishlist{
+    padding: 5px;    
+    background-color: crimson;
+    color: white;
+    font-weight: 400;
+    /* font-size: larger; */
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.Fav-Movie{
+    /* border: 1px solid; */
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(74, 6, 75, 0.701);
+}
+
+@media (max-width: 900px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .posters{
+        width: 200px;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        grid-template-columns: repeat(1,1fr);
+        width: 70vw;
+        margin-left: 5vw;
+    }
+    .posters{
+        width: 40vw;
+    }
+    .movies{
+        width: 50vw;
+        margin: auto;
+    }
+    .sidebar{
+        width: 100px;
+    }
+    #select{
+        margin: auto;
+        display: block;
+        padding: 3px;
+        outline: none;
+        border-radius: 5px;
+        font-size: medium;
+    }
+    .lists{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        /* border: 1px solid #ccc; */
+        margin: auto;
+        width: 20vw;
+    }
+}
